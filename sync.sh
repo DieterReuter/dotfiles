@@ -12,6 +12,11 @@ function doIt() {
         if [ ! -d ~/.vim/bundle/vundle ]; then
           git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
         fi
+        if [ ! -d /usr/local/rvm ]; then
+          # https://rvm.io
+          # rvm for the rubiess
+          curl -L https://get.rvm.io | sudo bash -s stable --ruby
+        fi
 
 	# sync all files to our $HOME directory ~/
 	rsync \
