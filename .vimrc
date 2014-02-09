@@ -265,8 +265,20 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
-"Bundle 'altercation/vim-colors-solarized'
-"Bundle 'Valloric/YouCompleteMe'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Raimondi/delimitMate'
+" use Ctrl-j to split line in insert mode
+imap <C-j> <CR><Esc>O
+Bundle 'scrooloose/syntastic'
+let g:syntastic_check_on_open=1
+Bundle 'Valloric/YouCompleteMe'
+"let g:ycm_app_preview_to_completeopt=0
+"let g:ycm_confirm_extra_conf=0
+"set completeopt-=preview
+Bundle 'marijnh/tern_for_vim'
+"Bundle 'thinca/vim-fontzoom'
 
 autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
