@@ -13,7 +13,7 @@ function doIt() {
           git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
         fi
 
-	# sync all files to out $HOME directory ~/
+	# sync all files to our $HOME directory ~/
 	rsync \
 	--exclude ".git/" \
 	--exclude ".gitignore" \
