@@ -33,7 +33,7 @@ function doIt() {
         vim +BundleInstall +qall
 
         # set some OSX defaults
-        bash ~/.dotfiles/osx-set-terminal-defaults.sh
+        ###bash ~/.dotfiles/osx-set-terminal-defaults.sh
 
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
