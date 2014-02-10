@@ -12,6 +12,10 @@ function doIt() {
         if [ ! -d ~/.vim/bundle/vundle ]; then
           git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
         fi
+        if [ ! -d ~/.vim/bundle/tern_for_vim ]; then
+          git clone https://github.com/marijnh/tern_for_vim ~/.vim/bundle/tern_for_vim
+          (cd ~/.vim/bundle/tern_for_vim && npm install)
+        fi
         if [ ! -d ~/.vim/bundle/YouCompleteMe ]; then
           sudo apt-get install -y build-essential cmake python-dev
           git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe

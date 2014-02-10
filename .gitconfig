@@ -43,5 +43,5 @@
 [url "git@github.com:DieterReuter/"]
   insteadOf = "git://github.com/DieterReuter/"
 [user]
-	email = dieter.reuter@me.com
 	name = Dieter Reuter
+	email = dieter.reuter@me.com
