@@ -15,10 +15,7 @@ function doIt() {
         if [ ! -d ~/.vim/bundle/YouCompleteMe ]; then
           sudo apt-get install -y build-essential cmake python-dev
           git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
-          cd ~/.vim/bundle/YouCompleteMe
-          git submodule update --init --recursive
-          #./install.sh
-          ./install.sh --clang-completer
+          (cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive && ./install.sh --clang-completer)
         fi
         if [ ! -d /usr/local/rvm ]; then
           # https://rvm.io
