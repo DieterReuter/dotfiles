@@ -6,6 +6,9 @@ function doIt() {
         if [ ! -d ~/code ]; then
           mkdir ~/code
         fi
+        if [ ! -f /usr/bin/pygmentize ]; then
+          sudo apt-get install -y python-pygments
+        fi
         if [ ! -d ~/code/z ]; then
           git clone https://github.com/rupa/z.git ~/code/z
         fi
